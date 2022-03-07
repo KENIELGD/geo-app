@@ -1,0 +1,19 @@
+<ion-content color="dark">
+  <ion-grid class="ion-no-padding">
+
+    <ion-label class="ion-padding-horizontal text-align-center" color="light">No tienes el GPS activo o se pedio la conexion con el GPS</ion-label>
+
+    <p class="ion-padding-horizontal">
+      <ion-text color="light">Verifica que tu GPS este activo, si no es asi enciendelo e intenta de nuevo.</ion-text>
+    </p>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="popoverController.dismiss(false)" size="small" shape="round" expand="block" fill="outline" color="light">Cancelar</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="popoverController.dismiss(true)" size="small" shape="round" expand="block" fill="outline" color="light">Recargar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
